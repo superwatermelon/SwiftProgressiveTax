@@ -14,4 +14,5 @@ Pod::Spec.new do |s|
   s.platform         = :ios, '9.2'
   s.requires_arc     = true
   s.source_files     = 'SwiftProgressiveTax/**/*'
+  s.dependency         'SwiftDecimalNumber', '~> 0.1'
 end
