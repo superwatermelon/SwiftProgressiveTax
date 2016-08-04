@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "SwiftProgressiveTax"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Library for calculations for progressive tax."
   s.description      = <<-DESC
                        A library providing an API to calculate progressive tax.

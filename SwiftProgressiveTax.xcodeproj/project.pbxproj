@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17E7E36A1D533C54000AFBC4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 17E7E3681D533C54000AFBC4 /* LICENSE */; };
+		17E7E36B1D533C54000AFBC4 /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 17E7E3691D533C54000AFBC4 /* Podfile.lock */; };
+		17E7E36D1D533C67000AFBC4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 17E7E36C1D533C67000AFBC4 /* README.md */; };
 		17F097291C8A48AB0070D6CF /* SwiftProgressiveTax.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 17F097281C8A48AB0070D6CF /* SwiftProgressiveTax.podspec */; };
 		3C4595C0F826A22E23A73311 /* Pods_SwiftProgressiveTaxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1538F749117D80DC5B5A86E /* Pods_SwiftProgressiveTaxTests.framework */; };
 		C107BE62FC97E3A93F948B4B /* Pods_SwiftProgressiveTax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0E9597D48F50C2E94AD64E /* Pods_SwiftProgressiveTax.framework */; };
@@ -28,6 +31,9 @@
 
 /* Begin PBXFileReference section */
 		0A9E7D336108A85BD85C6B4B /* Pods-SwiftProgressiveTax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProgressiveTax.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftProgressiveTax/Pods-SwiftProgressiveTax.debug.xcconfig"; sourceTree = "<group>"; };
+		17E7E3681D533C54000AFBC4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		17E7E3691D533C54000AFBC4 /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		17E7E36C1D533C67000AFBC4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		17F097281C8A48AB0070D6CF /* SwiftProgressiveTax.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwiftProgressiveTax.podspec; sourceTree = "<group>"; };
 		1B9206F36152D71D0FC0F631 /* Pods-SwiftProgressiveTax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProgressiveTax.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftProgressiveTax/Pods-SwiftProgressiveTax.release.xcconfig"; sourceTree = "<group>"; };
 		31064C394FB7DB1EDE407938 /* Pods-SwiftProgressiveTaxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProgressiveTaxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftProgressiveTaxTests/Pods-SwiftProgressiveTaxTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +103,9 @@
 		CAD69E8C724DF79E5997ABC8 = {
 			isa = PBXGroup;
 			children = (
+				17E7E36C1D533C67000AFBC4 /* README.md */,
+				17E7E3681D533C54000AFBC4 /* LICENSE */,
+				17E7E3691D533C54000AFBC4 /* Podfile.lock */,
 				17F097281C8A48AB0070D6CF /* SwiftProgressiveTax.podspec */,
 				CAD691D7866ED27399FAB8D1 /* Products */,
 				CAD69F6E9C6F713BA712B406 /* SwiftProgressiveTax */,
@@ -214,6 +223,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17E7E36B1D533C54000AFBC4 /* Podfile.lock in Resources */,
+				17E7E36A1D533C54000AFBC4 /* LICENSE in Resources */,
 				17F097291C8A48AB0070D6CF /* SwiftProgressiveTax.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17E7E36D1D533C67000AFBC4 /* README.md in Sources */,
 				CAD69DE8FA424AFFD632920B /* SwiftProgressiveTax.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

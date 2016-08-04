@@ -11,11 +11,11 @@ import XCTest
 
 class SwiftProgressiveTaxTests: XCTestCase {
 
-    let tax = ProgressiveTax([
-        TaxBracket(NSDecimalNumber(integerLiteral: 125000), NSDecimalNumber.zero())!,
-        TaxBracket(NSDecimalNumber(integerLiteral: 125000), NSDecimalNumber(string: "0.02"))!,
-        TaxBracket(NSDecimalNumber(integerLiteral: 675000), NSDecimalNumber(string: "0.05"))!,
-        TaxBracket(NSDecimalNumber(integerLiteral: 575000), NSDecimalNumber(string: "0.1"))!
+    let tax = SwiftProgressiveTax([
+        SwiftProgressiveTaxBracket(NSDecimalNumber(integerLiteral: 125000), NSDecimalNumber.zero())!,
+        SwiftProgressiveTaxBracket(NSDecimalNumber(integerLiteral: 125000), NSDecimalNumber(string: "0.02"))!,
+        SwiftProgressiveTaxBracket(NSDecimalNumber(integerLiteral: 675000), NSDecimalNumber(string: "0.05"))!,
+        SwiftProgressiveTaxBracket(NSDecimalNumber(integerLiteral: 575000), NSDecimalNumber(string: "0.1"))!
     ], NSDecimalNumber(string: "0.12"))!
     
     func testProgressiveTaxCalculations() {
@@ -29,7 +29,7 @@ class SwiftProgressiveTaxTests: XCTestCase {
     
     func testInvalidProgressiveTax() {
 
-        XCTAssertNil(ProgressiveTax([], NSDecimalNumber(string: "invalid")))
+        XCTAssertNil(SwiftProgressiveTax([], NSDecimalNumber(string: "invalid")))
         
     }
     

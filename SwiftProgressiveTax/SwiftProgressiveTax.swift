@@ -5,18 +5,18 @@
 import Foundation
 import SwiftDecimalNumber
 
-class ProgressiveTax {
+public class SwiftProgressiveTax {
 
     let zero = NSDecimalNumber.zero()
-    var brackets: [TaxBracket]
-    var remaining: NSDecimalNumber
+    public let brackets: [SwiftProgressiveTaxBracket]
+    public let remaining: NSDecimalNumber
 
-    init() {
+    public init() {
         self.brackets = []
         self.remaining = NSDecimalNumber.zero()
     }
     
-    init?(_ brackets: [TaxBracket], _ remaining: NSDecimalNumber) {
+    public init?(_ brackets: [SwiftProgressiveTaxBracket], _ remaining: NSDecimalNumber) {
         
         self.brackets = brackets
         self.remaining = remaining
@@ -27,15 +27,15 @@ class ProgressiveTax {
         
     }
 
-    func bands() -> [NSDecimalNumber] {
+    public func bands() -> [NSDecimalNumber] {
         return brackets.map { (bracket) in return bracket.band }
     }
 
-    func rates() -> [NSDecimalNumber] {
+    public func rates() -> [NSDecimalNumber] {
         return brackets.map { (bracket) in return bracket.rate } + [remaining]
     }
 
-    func banded(amount: NSDecimalNumber) -> [NSDecimalNumber] {
+    public func banded(amount: NSDecimalNumber) -> [NSDecimalNumber] {
         
         return bands().reduce([amount]) { (result, band) in
             
@@ -51,23 +51,23 @@ class ProgressiveTax {
         
     }
 
-    func on(amount: NSDecimalNumber) -> NSDecimalNumber {
+    public func on(amount: NSDecimalNumber) -> NSDecimalNumber {
         return Array(zip(banded(amount), rates())).reduce(zero) { (result, pair) in return result + pair.0 * pair.1 }
     }
 
 }
 
-class TaxBracket {
+public class SwiftProgressiveTaxBracket {
     
     let band: NSDecimalNumber
     let rate: NSDecimalNumber
     
-    init() {
+    public init() {
         self.band = NSDecimalNumber.zero()
         self.rate = NSDecimalNumber.zero()
     }
     
-    init?(_ band: NSDecimalNumber, _ rate: NSDecimalNumber) {
+    public init?(_ band: NSDecimalNumber, _ rate: NSDecimalNumber) {
         
         self.band = band
         self.rate = rate
@@ -80,10 +80,10 @@ class TaxBracket {
     
 }
 
-func *(left: ProgressiveTax, right: NSDecimalNumber) -> NSDecimalNumber {
+func *(left: SwiftProgressiveTax, right: NSDecimalNumber) -> NSDecimalNumber {
     return left.on(right)
 }
 
-func *(left: NSDecimalNumber, right: ProgressiveTax) -> NSDecimalNumber {
+func *(left: NSDecimalNumber, right: SwiftProgressiveTax) -> NSDecimalNumber {
     return right * left
 }
