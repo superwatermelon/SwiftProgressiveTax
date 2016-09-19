@@ -7,13 +7,13 @@ import SwiftDecimalNumber
 
 public class SwiftProgressiveTax {
 
-    let zero = NSDecimalNumber.zero()
+    let zero = NSDecimalNumber.zero
     public let brackets: [SwiftProgressiveTaxBracket]
     public let remaining: NSDecimalNumber
 
     public init() {
         self.brackets = []
-        self.remaining = NSDecimalNumber.zero()
+        self.remaining = NSDecimalNumber.zero
     }
     
     public init?(_ brackets: [SwiftProgressiveTaxBracket], _ remaining: NSDecimalNumber) {
@@ -21,7 +21,7 @@ public class SwiftProgressiveTax {
         self.brackets = brackets
         self.remaining = remaining
         
-        if (self.remaining == NSDecimalNumber.notANumber()) {
+        if (self.remaining == NSDecimalNumber.notANumber) {
             return nil
         }
         
@@ -35,7 +35,7 @@ public class SwiftProgressiveTax {
         return brackets.map { (bracket) in return bracket.rate } + [remaining]
     }
 
-    public func banded(amount: NSDecimalNumber) -> [NSDecimalNumber] {
+    public func banded(_ amount: NSDecimalNumber) -> [NSDecimalNumber] {
         
         return bands().reduce([amount]) { (result, band) in
             
@@ -51,7 +51,7 @@ public class SwiftProgressiveTax {
         
     }
 
-    public func on(amount: NSDecimalNumber) -> NSDecimalNumber {
+    public func on(_ amount: NSDecimalNumber) -> NSDecimalNumber {
         return Array(zip(banded(amount), rates())).reduce(zero) { (result, pair) in return result + pair.0 * pair.1 }
     }
 
@@ -63,8 +63,8 @@ public class SwiftProgressiveTaxBracket {
     let rate: NSDecimalNumber
     
     public init() {
-        self.band = NSDecimalNumber.zero()
-        self.rate = NSDecimalNumber.zero()
+        self.band = NSDecimalNumber.zero
+        self.rate = NSDecimalNumber.zero
     }
     
     public init?(_ band: NSDecimalNumber, _ rate: NSDecimalNumber) {
@@ -72,7 +72,7 @@ public class SwiftProgressiveTaxBracket {
         self.band = band
         self.rate = rate
         
-        if (NSDecimalNumber.notANumber() == self.band || NSDecimalNumber.notANumber() == self.rate) {
+        if (NSDecimalNumber.notANumber == self.band || NSDecimalNumber.notANumber == self.rate) {
             return nil
         }
         

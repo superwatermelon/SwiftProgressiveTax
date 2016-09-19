@@ -1,4 +1,12 @@
 # SwiftProgressiveTax
+##### Library for calculating progressive tax
+By [Stuart Wakefield](http://stuartwakefield.co.uk)
+
+- [Introduction]
+- [Installation]
+- [API]
+
+## Introduction
 
 A Swift library used to calculate progressive tax rates such as
 income tax and stamp duty, for example:
@@ -37,3 +45,7 @@ of the bands.
 The first argument is the size of the band, each band is filled
 sequentially. The second argument is the rate for the band, the
 amount that falls into the band will be multiplied by this rate.
+
+[Introduction]: #introduction
+[Installation]: #installation
+[API]: #api

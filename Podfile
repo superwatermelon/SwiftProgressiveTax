@@ -1,10 +1,12 @@
 use_frameworks!
 
+pod 'SwiftDecimalNumber', '~> 1.0.0-alpha'
+
 target 'SwiftProgressiveTax' do
-    pod 'SwiftDecimalNumber', '~> 0.1'
+    
 end
 
 target 'SwiftProgressiveTaxTests' do
-    pod 'SwiftDecimalNumber', '~> 0.1'
+    
 end
 

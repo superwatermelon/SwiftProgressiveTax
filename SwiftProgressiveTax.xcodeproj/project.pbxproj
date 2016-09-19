@@ -13,7 +13,6 @@
 		17F097291C8A48AB0070D6CF /* SwiftProgressiveTax.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 17F097281C8A48AB0070D6CF /* SwiftProgressiveTax.podspec */; };
 		3C4595C0F826A22E23A73311 /* Pods_SwiftProgressiveTaxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1538F749117D80DC5B5A86E /* Pods_SwiftProgressiveTaxTests.framework */; };
 		C107BE62FC97E3A93F948B4B /* Pods_SwiftProgressiveTax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0E9597D48F50C2E94AD64E /* Pods_SwiftProgressiveTax.framework */; };
-		CAD695E06FEF0A0ED5F6547A /* SwiftProgressiveTax.h in Headers */ = {isa = PBXBuildFile; fileRef = CAD69A77A3569359F50A7991 /* SwiftProgressiveTax.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CAD69CFDE6D9578CEED7769C /* SwiftProgressiveTaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD6908A96E29307E4F82D5D /* SwiftProgressiveTaxTests.swift */; };
 		CAD69DE8FA424AFFD632920B /* SwiftProgressiveTax.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD690DFE14AA4E32CB7CC86 /* SwiftProgressiveTax.swift */; };
 		CAD69F7925171303695B4251 /* SwiftProgressiveTax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD6979139116B0011B93A14 /* SwiftProgressiveTax.framework */; };
@@ -45,7 +44,6 @@
 		CAD6940D5372D2A66BFF9D47 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CAD6979139116B0011B93A14 /* SwiftProgressiveTax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftProgressiveTax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD69A15B92BBDB894C3A232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
-		CAD69A77A3569359F50A7991 /* SwiftProgressiveTax.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftProgressiveTax.h; sourceTree = "<group>"; };
 		CAD69CC4C80355A66DEDA771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		F1538F749117D80DC5B5A86E /* Pods_SwiftProgressiveTaxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProgressiveTaxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -129,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				CAD69CC4C80355A66DEDA771 /* Info.plist */,
-				CAD69A77A3569359F50A7991 /* SwiftProgressiveTax.h */,
 				CAD690DFE14AA4E32CB7CC86 /* SwiftProgressiveTax.swift */,
 			);
 			path = SwiftProgressiveTax;
@@ -142,7 +139,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAD695E06FEF0A0ED5F6547A /* SwiftProgressiveTax.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,12 +149,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAD69C520B79DA3C93830E1D /* Build configuration list for PBXNativeTarget "SwiftProgressiveTaxTests" */;
 			buildPhases = (
-				9AAD29A4633551FED6C30966 /* Check Pods Manifest.lock */,
+				9AAD29A4633551FED6C30966 /* [CP] Check Pods Manifest.lock */,
 				CAD69E2E4EA5BC34BA964961 /* Sources */,
 				CAD690E2128F0A0BD028B60F /* Frameworks */,
 				CAD69E35C010CCEEA541B304 /* Resources */,
-				E488B01DF0AF7E43C1EA393C /* Embed Pods Frameworks */,
-				6AB5250F859E3A6413B3B160 /* Copy Pods Resources */,
+				E488B01DF0AF7E43C1EA393C /* [CP] Embed Pods Frameworks */,
+				6AB5250F859E3A6413B3B160 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,12 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAD69457026F666CF3432A95 /* Build configuration list for PBXNativeTarget "SwiftProgressiveTax" */;
 			buildPhases = (
-				A3F2F64254E5EB140FAEF371 /* Check Pods Manifest.lock */,
+				A3F2F64254E5EB140FAEF371 /* [CP] Check Pods Manifest.lock */,
 				CAD690D4FABE8FBDC9CA7B24 /* Sources */,
 				CAD69F296171811F30F5C4B8 /* Frameworks */,
 				CAD69F04A03D31E49C4A262C /* Headers */,
 				CAD69315B93BD480A2966264 /* Resources */,
-				FABADB31D8A38CA181D17359 /* Copy Pods Resources */,
+				FABADB31D8A38CA181D17359 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +195,14 @@
 				LastSwiftMigration = 0720;
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
+				TargetAttributes = {
+					CAD69053F8F6D22CB1AECBAA = {
+						LastSwiftMigration = 0800;
+					};
+					CAD6937B28A7C3EA21B58BDA = {
+						LastSwiftMigration = 0800;
+					};
+				};
 			};
 			buildConfigurationList = CAD691971390F3E3F32E2272 /* Build configuration list for PBXProject "SwiftProgressiveTax" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -239,14 +243,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6AB5250F859E3A6413B3B160 /* Copy Pods Resources */ = {
+		6AB5250F859E3A6413B3B160 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,44 +258,44 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftProgressiveTaxTests/Pods-SwiftProgressiveTaxTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9AAD29A4633551FED6C30966 /* Check Pods Manifest.lock */ = {
+		9AAD29A4633551FED6C30966 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		A3F2F64254E5EB140FAEF371 /* Check Pods Manifest.lock */ = {
+		A3F2F64254E5EB140FAEF371 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E488B01DF0AF7E43C1EA393C /* Embed Pods Frameworks */ = {
+		E488B01DF0AF7E43C1EA393C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,14 +303,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftProgressiveTaxTests/Pods-SwiftProgressiveTaxTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FABADB31D8A38CA181D17359 /* Copy Pods Resources */ = {
+		FABADB31D8A38CA181D17359 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.superwatermelon.SwiftProgressiveTaxTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -433,6 +438,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -481,6 +487,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -549,6 +556,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
