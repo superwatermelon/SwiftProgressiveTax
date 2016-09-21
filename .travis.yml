@@ -1,3 +1,18 @@
+language: objective-c
 osx_image: xcode8
+xcode_sdk: iphonesimulator9.2
+xcode_workspace: SwiftProgressiveTax.xcworkspace
+xcode_scheme: SwiftProgressiveTax
 rvm:
   - 2.2.2
+before_install:
+  - gem install bundler
+install:
+  - bundle
+  - bundle exec pod install
+script:
+  - xcodebuild test -workspace SwiftProgressiveTax.xcworkspace -scheme SwiftProgressiveTax -destination 'name=iPhone 6'
+  - bundle exec pod lib lint
+  - bundle exec pod spec lint
+after_success:
+  - scripts/deploy.sh
