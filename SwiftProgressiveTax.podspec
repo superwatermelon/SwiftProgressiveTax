@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name = "SwiftProgressiveTax"
 
-  s.version = "1.0.0-alpha"
+  s.version = "1.0.1"
 
   s.summary = "Library for calculations for progressive tax."
 
@@ -25,8 +25,8 @@ Pod::Spec.new do |s|
 
   s.platform = :ios, '9.2'
 
-  s.source_files = 'SwiftProgressiveTax/**/*'
+  s.source_files = 'Sources/**/*.swift'
 
-  s.dependency 'SwiftDecimalNumber', '~> 1.0.0-alpha'
+  s.dependency 'SwiftDecimalNumber', '~> 1.0.3'
 
 end

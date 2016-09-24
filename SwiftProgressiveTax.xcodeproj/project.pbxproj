@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17E7E36A1D533C54000AFBC4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 17E7E3681D533C54000AFBC4 /* LICENSE */; };
-		17E7E36B1D533C54000AFBC4 /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 17E7E3691D533C54000AFBC4 /* Podfile.lock */; };
-		17E7E36D1D533C67000AFBC4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 17E7E36C1D533C67000AFBC4 /* README.md */; };
-		17F097291C8A48AB0070D6CF /* SwiftProgressiveTax.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 17F097281C8A48AB0070D6CF /* SwiftProgressiveTax.podspec */; };
+		17164C5C1D96D9A1001757C0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17164C5A1D96D9A1001757C0 /* Info.plist */; };
+		17164C601D96D9A9001757C0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17164C5E1D96D9A9001757C0 /* Info.plist */; };
+		17164C611D96D9A9001757C0 /* SwiftProgressiveTax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17164C5F1D96D9A9001757C0 /* SwiftProgressiveTax.swift */; };
+		17164C621D96DA7F001757C0 /* SwiftProgressiveTaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17164C5B1D96D9A1001757C0 /* SwiftProgressiveTaxTests.swift */; };
 		3C4595C0F826A22E23A73311 /* Pods_SwiftProgressiveTaxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1538F749117D80DC5B5A86E /* Pods_SwiftProgressiveTaxTests.framework */; };
 		C107BE62FC97E3A93F948B4B /* Pods_SwiftProgressiveTax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0E9597D48F50C2E94AD64E /* Pods_SwiftProgressiveTax.framework */; };
-		CAD69CFDE6D9578CEED7769C /* SwiftProgressiveTaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD6908A96E29307E4F82D5D /* SwiftProgressiveTaxTests.swift */; };
-		CAD69DE8FA424AFFD632920B /* SwiftProgressiveTax.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD690DFE14AA4E32CB7CC86 /* SwiftProgressiveTax.swift */; };
 		CAD69F7925171303695B4251 /* SwiftProgressiveTax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD6979139116B0011B93A14 /* SwiftProgressiveTax.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,21 +28,16 @@
 
 /* Begin PBXFileReference section */
 		0A9E7D336108A85BD85C6B4B /* Pods-SwiftProgressiveTax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProgressiveTax.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftProgressiveTax/Pods-SwiftProgressiveTax.debug.xcconfig"; sourceTree = "<group>"; };
-		17E7E3681D533C54000AFBC4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		17E7E3691D533C54000AFBC4 /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
-		17E7E36C1D533C67000AFBC4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		17F097281C8A48AB0070D6CF /* SwiftProgressiveTax.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwiftProgressiveTax.podspec; sourceTree = "<group>"; };
+		17164C5A1D96D9A1001757C0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = "<group>"; };
+		17164C5B1D96D9A1001757C0 /* SwiftProgressiveTaxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftProgressiveTaxTests.swift; path = Tests/SwiftProgressiveTaxTests.swift; sourceTree = "<group>"; };
+		17164C5E1D96D9A9001757C0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
+		17164C5F1D96D9A9001757C0 /* SwiftProgressiveTax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftProgressiveTax.swift; path = Sources/SwiftProgressiveTax.swift; sourceTree = "<group>"; };
 		1B9206F36152D71D0FC0F631 /* Pods-SwiftProgressiveTax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProgressiveTax.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftProgressiveTax/Pods-SwiftProgressiveTax.release.xcconfig"; sourceTree = "<group>"; };
 		31064C394FB7DB1EDE407938 /* Pods-SwiftProgressiveTaxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProgressiveTaxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftProgressiveTaxTests/Pods-SwiftProgressiveTaxTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C0E9597D48F50C2E94AD64E /* Pods_SwiftProgressiveTax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProgressiveTax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6583C5625FF58253364B9C /* Pods-SwiftProgressiveTaxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProgressiveTaxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftProgressiveTaxTests/Pods-SwiftProgressiveTaxTests.release.xcconfig"; sourceTree = "<group>"; };
 		CAD6902260FA252406D01FE4 /* SwiftProgressiveTaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftProgressiveTaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CAD6908A96E29307E4F82D5D /* SwiftProgressiveTaxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProgressiveTaxTests.swift; sourceTree = "<group>"; };
-		CAD690DFE14AA4E32CB7CC86 /* SwiftProgressiveTax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftProgressiveTax.swift; sourceTree = "<group>"; };
-		CAD6940D5372D2A66BFF9D47 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CAD6979139116B0011B93A14 /* SwiftProgressiveTax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftProgressiveTax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CAD69A15B92BBDB894C3A232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
-		CAD69CC4C80355A66DEDA771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		F1538F749117D80DC5B5A86E /* Pods_SwiftProgressiveTaxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProgressiveTaxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -69,6 +62,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17164C581D96D991001757C0 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				17164C5E1D96D9A9001757C0 /* Info.plist */,
+				17164C5F1D96D9A9001757C0 /* SwiftProgressiveTax.swift */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		17164C591D96D996001757C0 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				17164C5A1D96D9A1001757C0 /* Info.plist */,
+				17164C5B1D96D9A1001757C0 /* SwiftProgressiveTaxTests.swift */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
 		63464F50A539FEB259AE1973 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,35 +112,12 @@
 		CAD69E8C724DF79E5997ABC8 = {
 			isa = PBXGroup;
 			children = (
-				17E7E36C1D533C67000AFBC4 /* README.md */,
-				17E7E3681D533C54000AFBC4 /* LICENSE */,
-				17E7E3691D533C54000AFBC4 /* Podfile.lock */,
-				17F097281C8A48AB0070D6CF /* SwiftProgressiveTax.podspec */,
+				17164C591D96D996001757C0 /* Tests */,
+				17164C581D96D991001757C0 /* Sources */,
 				CAD691D7866ED27399FAB8D1 /* Products */,
-				CAD69F6E9C6F713BA712B406 /* SwiftProgressiveTax */,
-				CAD69E8C93D738B6E8979A65 /* SwiftProgressiveTaxTests */,
-				CAD6940D5372D2A66BFF9D47 /* Podfile */,
 				B6EA324266179BE69AFD00B6 /* Pods */,
 				63464F50A539FEB259AE1973 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		CAD69E8C93D738B6E8979A65 /* SwiftProgressiveTaxTests */ = {
-			isa = PBXGroup;
-			children = (
-				CAD69A15B92BBDB894C3A232 /* Info.plist */,
-				CAD6908A96E29307E4F82D5D /* SwiftProgressiveTaxTests.swift */,
-			);
-			path = SwiftProgressiveTaxTests;
-			sourceTree = "<group>";
-		};
-		CAD69F6E9C6F713BA712B406 /* SwiftProgressiveTax */ = {
-			isa = PBXGroup;
-			children = (
-				CAD69CC4C80355A66DEDA771 /* Info.plist */,
-				CAD690DFE14AA4E32CB7CC86 /* SwiftProgressiveTax.swift */,
-			);
-			path = SwiftProgressiveTax;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,9 +215,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17E7E36B1D533C54000AFBC4 /* Podfile.lock in Resources */,
-				17E7E36A1D533C54000AFBC4 /* LICENSE in Resources */,
-				17F097291C8A48AB0070D6CF /* SwiftProgressiveTax.podspec in Resources */,
+				17164C601D96D9A9001757C0 /* Info.plist in Resources */,
+				17164C5C1D96D9A1001757C0 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,8 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17E7E36D1D533C67000AFBC4 /* README.md in Sources */,
-				CAD69DE8FA424AFFD632920B /* SwiftProgressiveTax.swift in Sources */,
+				17164C611D96D9A9001757C0 /* SwiftProgressiveTax.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAD69CFDE6D9578CEED7769C /* SwiftProgressiveTaxTests.swift in Sources */,
+				17164C621D96DA7F001757C0 /* SwiftProgressiveTaxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AB6583C5625FF58253364B9C /* Pods-SwiftProgressiveTaxTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -380,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = SwiftProgressiveTaxTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -396,6 +383,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 31064C394FB7DB1EDE407938 /* Pods-SwiftProgressiveTaxTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -429,7 +417,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = SwiftProgressiveTaxTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -446,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1B9206F36152D71D0FC0F631 /* Pods-SwiftProgressiveTax.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -478,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = SwiftProgressiveTax/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -507,6 +496,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0A9E7D336108A85BD85C6B4B /* Pods-SwiftProgressiveTax.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -545,7 +535,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = SwiftProgressiveTax/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
