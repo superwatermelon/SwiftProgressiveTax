@@ -27,6 +27,6 @@ Pod::Spec.new do |s|
 
   s.source_files = 'SwiftProgressiveTax/**/*'
 
-  s.dependency 'SwiftDecimalNumber', '~> 1.0.0-alpha'
+  s.dependency 'SwiftDecimalNumber', '~> 1.0.3'
 
 end
