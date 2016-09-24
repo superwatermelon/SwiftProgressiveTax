@@ -1,6 +1,6 @@
 use_frameworks!
 
-pod 'SwiftDecimalNumber', '= 1.0.0-alpha'
+pod 'SwiftDecimalNumber', '~> 1.0.1-alpha'
 
 target 'SwiftProgressiveTax' do
 

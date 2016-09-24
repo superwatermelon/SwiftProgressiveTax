@@ -9,6 +9,7 @@ before_install:
   - gem install bundler
 install:
   - bundle
+  - bundle exec pod cache clean
   - bundle exec pod install
 script:
   - xcodebuild test -workspace SwiftProgressiveTax.xcworkspace -scheme SwiftProgressiveTax -destination 'name=iPhone 6'
