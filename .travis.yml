@@ -10,6 +10,7 @@ before_install:
 install:
   - bundle
   - bundle exec pod install
+  - bundle exec pod repo update
 script:
   - xcodebuild test -workspace SwiftProgressiveTax.xcworkspace -scheme SwiftProgressiveTax -destination 'name=iPhone 6'
   - bundle exec pod lib lint
